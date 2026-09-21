@@ -1,0 +1,20 @@
+model_config :
+    layers : [None, 64, 64, 1]
+    final_nonlin : False
+    dropout_p : 0
+    ensemble_size : 100
+    seed: 42
+
+trainer_config :
+    init_lr_net : 0.1
+    init_lr_params : 0.01
+    maximize: false
+    decay_steps: 7
+    patience: 5
+    decay_factor: 0.3
+    tolerance: 0.0000000001
+    batch_size : 256
+    split : 0.8
+    iterations : 20000
+    l2_net_decay : 0
+    optimizer: 'adam'

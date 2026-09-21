@@ -1,0 +1,23 @@
+# Minimal environment for running hybrid_nn.py and hybrid_nn_rashomon_robust.py
+# (no notebooks, no plotting, CPU-only JAX/PyTorch by default)
+name: hybrid_modeling
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - pyyaml
+  - jax
+  - jaxlib
+  - optax
+  - tqdm
+  - chex
+  - flax
+  - pip:
+    - sympy
+    - torch

@@ -1,0 +1,190 @@
+[
+    {
+        "name": "jin_1",
+        "equation": "a0 * x0 ** 4 + a1 * x0 ** 3 + a2 * x1 ** 2 + a3 * x1",
+        "input_variables": ["x0", "x1"],
+        "parameters": ["a0", "a1", "a2", "a3"],
+        "parameter_values": {
+            "a0": 2.5,
+            "a1": -1.3,
+            "a2": 0.5,
+            "a3": -1.7
+        },
+        "input_variable_ranges": {
+            "x0": [[-3,3],[3,3.5]],
+            "x1": [[-3,3],[3,3.5]]
+        },
+        "seed": 101
+    },
+
+    {
+        "name": "jin_3",
+        "equation": "a0 * x0 ** 3 + a1 * x1 ** 3 + a2 * x1 + a3 * x0",
+        "input_variables": ["x0", "x1"],
+        "parameters": ["a0", "a1", "a2", "a3"],
+        "parameter_values": {
+            "a0": 0.2,
+            "a1": 0.5,
+            "a2": -1.2,
+            "a3": -0.5
+        },
+        "input_variable_ranges": {
+            "x0": [[-3,3],[3,3.5]],
+            "x1": [[-3,3],[3,3.5]]
+        },
+        "seed": 102
+    },
+
+    {
+        "name": "jin_4",
+        "equation": "a0 * exp(a1 * x0 + a2) + a3 * cos( a4 * x1 + a5)",
+        "input_variables": ["x0", "x1"],
+        "parameters": ["a0", "a1", "a2", "a3", "a4", "a5"],
+        "parameter_values": {
+            "a0": 1.5,
+            "a1": 1,
+            "a2": 0,
+            "a3": 5,
+            "a4": 1,
+            "a5": 0
+        },
+        "input_variable_ranges": {
+            "x0": [[-3,3],[3,3.5]],
+            "x1": [[-3,3],[3,3.5]]
+        },
+        "seed": 103
+    },
+
+    {
+        "name": "korns_12",
+        "equation": "a0 + a1 * cos(a2 * x0) * sin(a3 * x1)",
+        "input_variables": ["x0", "x1"],
+        "parameters": ["a0", "a1", "a2", "a3"],
+        "parameter_values": {
+        "a0": 2,
+        "a1": -2.1,
+        "a2": 9.8,
+        "a3": 1.3
+        },
+        "input_variable_ranges": {
+        "x0": [[-50,50],[50,60]],
+        "x1": [[-50,50],[50,60]]
+        },
+        "seed": 104
+    },
+
+    {
+        "name": "nguyen_13",
+        "equation": "a0 / (a1 + a2 * x0 ** 2 + a3 * x1 ** 2)",
+        "input_variables": ["x0", "x1"],
+        "parameters": ["a0", "a1", "a2", "a3"],
+        "parameter_values": {
+            "a0": 8,
+            "a1": 2,
+            "a2": 1,
+            "a3": 1
+        },
+        "input_variable_ranges": {
+            "x0": [[-1,1],[1,1.5]],
+            "x1": [[-1,1],[1,1.5]]
+        },
+        "seed": 105
+    },
+    
+    {
+        "name": "pagie_1",
+        "equation": "a0 / (a1 + x0 ** -4) + a2 / (a3 + x1 ** -4)",
+        "input_variables": ["x0", "x1"],
+        "parameters": ["a0", "a1", "a2", "a3"],
+        "parameter_values": {
+        "a0": 1,
+        "a1": 1,
+        "a2": 1,
+        "a3": 1
+        },
+        "input_variable_ranges": {
+        "x0": [[-5,5],[5,6]],
+        "x1": [[-5,5],[5,6]]
+        },
+        "seed": 106
+    },
+
+    {
+        "name": "new_1",
+        "comment": "jin_1 + jin_4",
+        "equation": "a0 * x0 ** 4 + a1 * x0 ** 3 + a2 * cos( a3 * x1 + a4)",
+        "input_variables": ["x0", "x1"],
+        "parameters": ["a0", "a1", "a2", "a3", "a4"],
+        "parameter_values": {
+            "a0": 2.5,
+            "a1": -1.3,
+            "a2": 5,
+            "a3": 1,
+            "a4": 0
+        },
+        "input_variable_ranges": {
+            "x0": [[-3,3],[3,4]],
+            "x1": [[-3,3],[3,4]]
+        },
+        "seed": 107
+    },
+
+    {
+        "name": "new_2",
+        "comment": "jin_4 + jin_1",
+        "equation": "a0 * exp(a1 * x0 + a2) + a3 * x1 ** 2 + a4 * x1",
+        "input_variables": ["x0", "x1"],
+        "parameters": ["a0", "a1", "a2", "a3", "a4"],
+        "parameter_values": {
+            "a0": 1.5,
+            "a1": 1,
+            "a2": 0,
+            "a3": 0.5,
+            "a4": -1.7
+        },
+        "input_variable_ranges": {
+            "x0": [[-3,3],[3,4]],
+            "x1": [[-3,3],[3,4]]
+        },
+        "seed": 108
+    },
+
+    {
+        "name": "new_3",
+        "comment": "jin_4 + pagie_1",
+        "equation": "a0 * exp(a1 * x0 + a2) + a3 / (a4 + x1 ** -4)",
+        "input_variables": ["x0", "x1"],
+        "parameters": ["a0", "a1", "a2", "a3", "a4"],
+        "parameter_values": {
+            "a0": 1.5,
+            "a1": 1,
+            "a2": 0,
+            "a3": 1,
+            "a4": 1
+        },
+        "input_variable_ranges": {
+            "x0": [[-3,3],[3,4]],
+            "x1": [[-5,5],[5,7]]
+        },
+        "seed": 109
+    },
+
+    {
+        "name": "new_4",
+        "comment": "jin_1 + pagie_1",
+        "equation": "a0 * x0 ** 4 + a1 * x0 ** 3 + a2 / (a3 + x1 ** -4)",
+        "input_variables": ["x0", "x1"],
+        "parameters": ["a0", "a1", "a2", "a3"],
+        "parameter_values": {
+            "a0": 2.5,
+            "a1": -1.3,
+            "a2": 1,
+            "a3": 1
+        },
+        "input_variable_ranges": {
+            "x0": [[-3,3],[3,4]],
+            "x1": [[-5,5],[5,7]]
+        },
+        "seed": 110
+    }
+]
